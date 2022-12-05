@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    width:100%;
+    min-height: 100vh;
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size:16px;
+    background-color: hsl(204, 43%, 93%);;
+}
+.container{
+    max-width:500px;
+    background:#fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.top{   
+    padding:20px 30px;
+}
+.top h2{
+    color:hsl(179, 62%, 43%);   
+    font: size 1.3em;
+    margin:10px 0;
+}
+.top h5{
+    color: hsl(71, 73%, 54%);   
+    margin:10px 0;
+}
+.top p{
+    font-size:0.9rem;
+    color:hsl(204, 43%, 93%);
+    margin:20px 0;
+}
+.bottom{
+    background-color:pink;
+    display:flex;
+    justify-content: center;
+    align-items: stretch;
+}
+.left,.right{
+    width:50%;
+}
+.left{
+    background-color: hsl(179, 62%, 43%);
+    padding:30px 20px;
+}
+.left .cost p{
+    font-size:0.8rem;
+}
+.left .cost p span{
+    font-size:1.2rem;
+    color:white;
+    font-weight: 900;
+}
+.left .title,.right .title{   
+    font-size:1rem;
+    color:#fff;
+    margin-bottom:10px;
+}
+.left p{
+    font-size:0.8rem;
+    margin:10px 0;
+    color:hsl(204, 43%, 93%);   
+}
+.left .btn{
+    width:100%;
+    text-align:center;
+    margin-top:25px;
+    /* margin-top:100px; */
+}
+.left .btn a{
+    text-decoration:none;
+    margin:10px auto;
+    padding:10px 60px;
+    background-color: hsl(71, 73%, 54%) ;
+    border-radius:5px;
+    color:hsl(204, 43%, 93%);
+    
+}
+.right{
+    background-color: hsl(179, 62%, 43%,0.76);
+    padding:5px 30px;
+}
+.right p{
+    font-size:0.8rem;
+    margin:30px 0px;
+    color:hsl(204, 43%, 93%); 
+}
+@media screen  and (max-width:500px)
+{
+    .container{
+        max-width:90%;
+        }
+    .bottom{
+        flex-direction: column;
+    }
+    .left,.right{
+        width:100%;
+    }
+}
